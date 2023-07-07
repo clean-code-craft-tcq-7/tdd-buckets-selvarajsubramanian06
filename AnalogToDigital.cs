@@ -18,7 +18,6 @@ namespace TDRange
                     values.AmpValue = Math.Round(amps);
                 convertedData.Add(values);
             }
-
             return convertedData;
         }
     }
