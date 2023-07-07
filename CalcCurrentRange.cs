@@ -32,7 +32,6 @@ namespace TDRange
                 if (list.Count > 0)
                     lstRange.Add(list);
             }
-
             int cnt = 0;
             cnt = lstRange.Sum(x => x.Count);
 
