@@ -6,14 +6,11 @@ namespace TDRange
 {
     internal class A2DTest
     {
-
         public void CreateA2DObject()
         {
             AnalogToDigital name = new AnalogToDigital();
             Debug.Assert(name != null);
-
         }
-        
         public void ValidateErrorInput()
         {
             decimal[] inputArr = { 4095 };
@@ -21,7 +18,6 @@ namespace TDRange
             var range = sensorValue.ConvertToAmp(inputArr);
             Debug.Assert(range[0].Error == 1);
         }
-        
         public void ValidateInput()
         {
             decimal[] inputArr = { 1500 };
@@ -29,7 +25,6 @@ namespace TDRange
             var range = sensorValue.ConvertToAmp(inputArr);
             Debug.Assert(range[0].AmpValue == 4);
         }
-        
         public void ValidateInvalidInputs()
         {
             decimal[] inputArr = { 1146, 4095, 4094, 1614 };
@@ -38,8 +33,6 @@ namespace TDRange
             int[] arrs = RangeUtils.convertToArray(range);
             Debug.Assert(arrs == new[] { 3, 10, 4 } );
         }
-
-        
         public void DetectRangeIgnoringErrorValue()
         {
             decimal[] inputArr = { 1146, 4095, 4094, 1614, 3880 };
