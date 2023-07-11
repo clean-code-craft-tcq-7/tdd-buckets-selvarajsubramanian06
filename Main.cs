@@ -16,7 +16,7 @@ namespace TDRange
             currentRangeTest.CaptureRange();
 
             A2DTest a2DConvertorTest = new A2DTest();
-            a2DConvertorTest.CreateConvertorObject();
+            a2DConvertorTest.CreateA2DObject();
             a2DConvertorTest.ValidateErrorInput();
             a2DConvertorTest.ValidateInput();
             a2DConvertorTest.ValidateInvalidInputs();
