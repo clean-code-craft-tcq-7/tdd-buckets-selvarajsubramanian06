@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TDRange
 {
-    public class Main
+    public class Program
     {
         static void Main(string[] args)
         {
